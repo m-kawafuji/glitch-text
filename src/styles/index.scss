@@ -16,8 +16,7 @@
   color: #fff;
   line-height: 1;
 
-  &::before,
-  &::after {
+  &::before {
     z-index: -1;
     position: absolute;
     inset: 0;
@@ -25,7 +24,6 @@
   }
 
   &::before {
-    clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
     animation: 2s linear infinite glitch;
   }
 }
@@ -41,7 +39,7 @@
 
   5% {
     clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
-    transform: translate(1%, 1%);
+    transform: translate(1px, 1px);
     text-shadow:
       -0.04em -0.04em magenta,
       0.04em 0.04em cyan;
@@ -49,12 +47,12 @@
 
   10% {
     clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
-    transform: translate(-1%, -1%);
+    transform: translate(-1px, -1px);
   }
 
   15% {
     clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
-    transform: translate(1%, 1%);
+    transform: translate(1px, 1px);
     text-shadow:
       -0.04em -0.04em cyan,
       0.04em 0.04em magenta;
@@ -62,12 +60,12 @@
 
   20% {
     clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
-    transform: translate(-1%, -1%);
+    transform: translate(-1px, -1px);
   }
 
   25% {
     clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
-    transform: translate(1%, 1%);
+    transform: translate(1px, 1px);
     text-shadow:
       -0.04em -0.04em magenta,
       0.04em 0.04em cyan;
@@ -75,7 +73,7 @@
 
   30% {
     clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
-    transform: translate(-1%, -1%);
+    transform: translate(-1px, -1px);
   }
 
   40% {
