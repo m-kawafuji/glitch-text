@@ -42,43 +42,48 @@
   5% {
     clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
     transform: translate(1px, 1px);
-    text-shadow:
-      -0.04em -0.04em magenta,
-      0.04em 0.04em cyan;
   }
 
   10% {
     clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
     transform: translate(-1px, -1px);
-  }
-
-  15% {
-    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
-    transform: translate(1px, 1px);
-    text-shadow:
-      -0.04em -0.04em cyan,
-      0.04em 0.04em magenta;
-  }
-
-  20% {
-    clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
-    transform: translate(-1px, -1px);
-  }
-
-  25% {
-    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
-    transform: translate(1px, 1px);
     text-shadow:
       -0.04em -0.04em magenta,
       0.04em 0.04em cyan;
   }
 
+  15% {
+    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
+    transform: translate(1px, 1px);
+  }
+
+  20% {
+    clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
+    transform: translate(-1px, -1px);
+    text-shadow:
+      -0.04em -0.04em cyan,
+      0.04em 0.04em magenta;
+  }
+
+  25% {
+    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
+    transform: translate(1px, 1px);
+  }
+
   30% {
     clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
     transform: translate(-1px, -1px);
+    text-shadow:
+      -0.04em -0.04em magenta,
+      0.04em 0.04em cyan;
   }
 
   35% {
+    clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
+    transform: translate(1px, 1px);
+  }
+
+  40% {
     clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
     transform: translate(0, 0);
     text-shadow:
