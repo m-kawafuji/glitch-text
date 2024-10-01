@@ -9,12 +9,16 @@
   position: relative;
   margin: auto;
   font-family: "Montserrat", system-ui;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: 0;
   z-index: 1;
   color: #fff;
   line-height: 1;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
 
   &::before {
     z-index: -1;
