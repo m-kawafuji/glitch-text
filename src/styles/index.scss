@@ -23,9 +23,6 @@
     position: absolute;
     inset: 0;
     content: attr(data-text);
-  }
-
-  &::before {
     animation: 2s linear infinite glitch;
   }
 }
