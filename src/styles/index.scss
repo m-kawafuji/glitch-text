@@ -1,0 +1,88 @@
+@use "sass:math";
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.text {
+  position: relative;
+  margin: auto;
+  font-family: "Montserrat", system-ui;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  z-index: 1;
+  color: #fff;
+  line-height: 1;
+
+  &::before,
+  &::after {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    content: attr(data-text);
+  }
+
+  &::before {
+    clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
+    animation: 2s linear infinite glitch;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
+    transform: translate(0, 0);
+    text-shadow:
+      0 0 cyan,
+      0 0 magenta;
+  }
+
+  5% {
+    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
+    transform: translate(1%, 1%);
+    text-shadow:
+      -0.04em -0.04em magenta,
+      0.04em 0.04em cyan;
+  }
+
+  10% {
+    clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
+    transform: translate(-1%, -1%);
+  }
+
+  15% {
+    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
+    transform: translate(1%, 1%);
+    text-shadow:
+      -0.04em -0.04em cyan,
+      0.04em 0.04em magenta;
+  }
+
+  20% {
+    clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
+    transform: translate(-1%, -1%);
+  }
+
+  25% {
+    clip-path: polygon(-999px 0%, 999px 0%, 999px 100%, -999px 100%);
+    transform: translate(1%, 1%);
+    text-shadow:
+      -0.04em -0.04em magenta,
+      0.04em 0.04em cyan;
+  }
+
+  30% {
+    clip-path: polygon(-999px 70%, 999px 70%, 999px 20%, -999px 20%);
+    transform: translate(-1%, -1%);
+  }
+
+  40% {
+    clip-path: polygon(-999px 0, 999px 0, 999px 100%, -999px 100%);
+    transform: translate(0, 0);
+    text-shadow:
+      0 0 cyan,
+      0 0 magenta;
+  }
+}
